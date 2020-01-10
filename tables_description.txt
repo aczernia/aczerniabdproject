@@ -1,0 +1,11 @@
+Workshop - tabela przetrzymuje dane o warsztatach zarejestrowanych w systemie, wraz z u¿ytkownikiem do jakiego dany warsztat jest przypisany
+Address - jest po³¹czona relacj¹ jeden-jeden do tabeli warsztat i zawiera adresy warsztatów - jest wyci¹gniêta do oddzielnej tabeli w celu przyœpieszenia algorytmów wyszukiwania odpowiedniego warsztatu
+City - zawiera s³ownik miast dla tabeli Address
+ServiceType - zawiera typy us³ug jakie obs³uguje nasz serwis
+WorkshopServiceType - zawiera jakie typy obs³uguje konkretny warsztat
+User - zawiera u¿ytkowników systemu, zarówno klientów jak i userów - w³aœcicieli warszratu
+Client - zawiera dane klientów zarejestrowanych do systemu wraz z ich danymi i nazw¹ samochodu
+Role - okreœla jak¹ dany u¿ytkownik ma role(warsztat, admin czy klient)
+Visit - zawiera daty i szczególy zarezerwowanych wizyt w warsztatach
+VisitsStatusType - tabela s³ownikowa, zawiera wartoœci statusów jakie mo¿e przyj¹æ wizyta(utworzona, zrealizowana, anulowana etc..)
+VisitStatus - tabela zawieraj¹ca poszczególne statusy wizyt - dziêki tej tabeli mo¿emy odczytaæ dok³adnie kiedy wizyta siê odby³a, kiedy zosta³a zakoñczona etc.
