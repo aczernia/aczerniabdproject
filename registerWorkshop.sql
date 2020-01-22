@@ -1,3 +1,13 @@
+USE [Workshoper]
+GO
+
+/****** Object:  StoredProcedure [dbo].[RegisterWorkshop]    Script Date: 1/22/2020 9:16:02 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
 CREATE PROCEDURE [dbo].[RegisterWorkshop]
 	@Name nvarchar(200),
 	@PhoneNumber nvarchar(200),
@@ -29,3 +39,6 @@ BEGIN
 	
 	COMMIT TRANSACTION
 END
+GO
+
+
